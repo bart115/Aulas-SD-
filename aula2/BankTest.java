@@ -3,11 +3,11 @@ import java.util.Random;
 public class BankTest {
 
     private static class Mover implements Runnable {
-        private Bank b;
+        private Bankx b;
         private int accs;
         private int iters;
 
-        public Mover(Bank b, int accs, int iters) {
+        public Mover(Bankx b, int accs, int iters) {
             this.b = b;
             this.accs = accs;
             this.iters = iters;
@@ -26,7 +26,7 @@ public class BankTest {
     public static void main(String[] args) throws InterruptedException {
         int ACCS = 10;
         int ITERS = 1000000;
-        Bank b = new Bank(ACCS);
+        Bankx b = new Bankx(ACCS);
         for (int i = 0; i < ACCS; i++)
             b.deposit(i, 1000); // em cada conta depositar 1000 e são 10 contas logo o total é 10000
         int balance1 = b.totalBalance();

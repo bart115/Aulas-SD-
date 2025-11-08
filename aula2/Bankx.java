@@ -1,7 +1,7 @@
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class Bank {
+public class Bankx {
 
 
     private static class Account {
@@ -49,7 +49,7 @@ public class Bank {
     final private int slots;
     private Account[] av;
 
-    public Bank(int n) { // cria N contas com 0 euros cada
+    public Bankx(int n) { // cria N contas com 0 euros cada
         slots = n;
         av = new Account[slots];
         for (int i = 0; i < slots; i++) av[i] = new Account(0); //
