@@ -1,0 +1,2 @@
+Duvidas dos guiões práticos: 
+Guião 2- exercicio 1 - porque é que não é preciso colocar lcok no contrutor de account

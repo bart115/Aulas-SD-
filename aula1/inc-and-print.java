@@ -16,7 +16,7 @@ class Exercicio1 {
         int num_threads = 10;
         Thread[] threads = new Thread[num_threads];
         for (int i = 0 ; i < num_threads; i++){
-            threads[i] = new Thread(new Increment());
+            threads[i] = new Thread(new Increment()); // cria a thread com o runnable Increment
             threads[i].start();
         }
 
